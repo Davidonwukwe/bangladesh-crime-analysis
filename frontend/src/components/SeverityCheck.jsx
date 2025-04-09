@@ -51,8 +51,9 @@ const SeverityCheck = () => {
   const handleCloseModal = () => setShowModal(false);
 
   return (
-    <Container className="mt-4">
-      <h3 className="mb-4 text-center">Severity Check</h3>
+    <Container className="p-4">
+      <h3 className="mb-1 text-center">Severity Check</h3>
+      <p className="mb-4 text-center">Add the number of crimes for each category of a year</p>
       <Form onSubmit={handleSubmit}>
         <Row>
           {inputs.map((input, index) => (
