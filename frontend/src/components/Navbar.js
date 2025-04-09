@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
+      <div className="container-fluid d-flex justify-content-between align-items-center p-4">
+        {/* Logo / Brand */}
         <Link className="navbar-brand" to="/">
           Crime Analytics Bangladesh
         </Link>
+
+        {/* Toggle button for mobile */}
         <button
           className="navbar-toggler"
           type="button"
@@ -19,7 +22,12 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+
+        {/* Navigation links */}
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/">
@@ -27,23 +35,8 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/crime-trends">
-                Crime Trends
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/crime-by-unit">
-                Crime by Unit
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/crime-distribution">
-                Crime Distribution
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link className="nav-link" to="/full-dashboard">
-                Full Dashboard
+                Dashboard
               </Link>
             </li>
             <li className="nav-item">
