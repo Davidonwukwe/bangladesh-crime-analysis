@@ -28,6 +28,20 @@ function FullDashboardPage() {
                     <div ref={vizRef}></div>
                 </div>
             </div>
+            <div className="card">
+                <div className="card-body">
+                    <h5 className="card-title">Crime Units Map</h5>
+                    <iframe
+                        src="/crime_units_map.html"
+                        width="100%"
+                        height="600"
+                        title="Crime Units Map"
+                        frameBorder="0"
+                        allowFullScreen
+                        style={{ display: 'block' }}
+                    ></iframe>
+                </div>
+            </div>
         </div>
     );
 }
