@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e2b156f780cd05ec952c3cef5204a7f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e2b156f780cd05ec952c3cef5204a7f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e2b156f780cd05ec952c3cef5204a7f5 = L.map(
+                "map_e2b156f780cd05ec952c3cef5204a7f5",
+                {
+                    center: [23.685, 90.3563],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6dbf5c841883c4f1fd435ba4b1e7fb59 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6dbf5c841883c4f1fd435ba4b1e7fb59.addTo(map_e2b156f780cd05ec952c3cef5204a7f5);
+        
+    
+            var marker_cluster_cfecaf730c88559c80488c3d2ae37b6a = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_265dd0187efc5b0daa635698559cef9f = L.marker(
+                [23.7276, 90.4106],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_15d2002d4a648f4cb558dec3ea7dd9cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2eb0a9145ce266d508975f44c9527bac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a0252a724101429b0533d5a5997a9ea = $(`<div id="html_3a0252a724101429b0533d5a5997a9ea" style="width: 100.0%; height: 100.0%;">Unit: DMP (Dhaka Metropolitan Police)<br>Total Cases: 202780</div>`)[0];
+                popup_2eb0a9145ce266d508975f44c9527bac.setContent(html_3a0252a724101429b0533d5a5997a9ea);
+            
+        
+
+        marker_265dd0187efc5b0daa635698559cef9f.bindPopup(popup_2eb0a9145ce266d508975f44c9527bac)
+        ;
+
+        
+    
+    
+                marker_265dd0187efc5b0daa635698559cef9f.setIcon(icon_15d2002d4a648f4cb558dec3ea7dd9cb);
+            
+    
+            var marker_ccef1c312506c82f753d552db4ef29cd = L.marker(
+                [22.3569, 91.7832],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_685eb015aca0d0ca9a5f593977fe7e2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95395fc5bd14ebaf476c48eaf8ff3887 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffac7b3f25c0d1d06a276500f800f789 = $(`<div id="html_ffac7b3f25c0d1d06a276500f800f789" style="width: 100.0%; height: 100.0%;">Unit: CMP (Chittagong Metropolitan Police)<br>Total Cases: 48869</div>`)[0];
+                popup_95395fc5bd14ebaf476c48eaf8ff3887.setContent(html_ffac7b3f25c0d1d06a276500f800f789);
+            
+        
+
+        marker_ccef1c312506c82f753d552db4ef29cd.bindPopup(popup_95395fc5bd14ebaf476c48eaf8ff3887)
+        ;
+
+        
+    
+    
+                marker_ccef1c312506c82f753d552db4ef29cd.setIcon(icon_685eb015aca0d0ca9a5f593977fe7e2d);
+            
+    
+            var marker_596c1063e2a158b0a6d8bad774bb87c5 = L.marker(
+                [22.82, 89.55],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_9b7206ddca08ba2f66818bcd0223e6e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63bfeb6a601645ccd596cbef5826c3ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a656b26de401657c39e1464c015ad1ce = $(`<div id="html_a656b26de401657c39e1464c015ad1ce" style="width: 100.0%; height: 100.0%;">Unit: KMP (Khulna Metropolitan Police)<br>Total Cases: 16394</div>`)[0];
+                popup_63bfeb6a601645ccd596cbef5826c3ac.setContent(html_a656b26de401657c39e1464c015ad1ce);
+            
+        
+
+        marker_596c1063e2a158b0a6d8bad774bb87c5.bindPopup(popup_63bfeb6a601645ccd596cbef5826c3ac)
+        ;
+
+        
+    
+    
+                marker_596c1063e2a158b0a6d8bad774bb87c5.setIcon(icon_9b7206ddca08ba2f66818bcd0223e6e7);
+            
+    
+            var marker_135ea68d5924d608dd2e027e8ad9a998 = L.marker(
+                [24.374, 88.6011],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_18fa7acb8b2dd6fb67309a50d1b4ad7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de21f16cbd3ec89065a11951a1129948 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f5a03bbca0fc36cda0f758d2c863cf2 = $(`<div id="html_2f5a03bbca0fc36cda0f758d2c863cf2" style="width: 100.0%; height: 100.0%;">Unit: RMP (Rajshahi Metropolitan Police)<br>Total Cases: 19149</div>`)[0];
+                popup_de21f16cbd3ec89065a11951a1129948.setContent(html_2f5a03bbca0fc36cda0f758d2c863cf2);
+            
+        
+
+        marker_135ea68d5924d608dd2e027e8ad9a998.bindPopup(popup_de21f16cbd3ec89065a11951a1129948)
+        ;
+
+        
+    
+    
+                marker_135ea68d5924d608dd2e027e8ad9a998.setIcon(icon_18fa7acb8b2dd6fb67309a50d1b4ad7f);
+            
+    
+            var marker_891b3da73d2d1d2a6d75e4b9eeb223f5 = L.marker(
+                [22.701, 90.3535],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_71481678c304e7fd61c8753718220dc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7924f7047e3741a0935f46b57337898a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_839285072eea1e8b34c52212ebc3a2fc = $(`<div id="html_839285072eea1e8b34c52212ebc3a2fc" style="width: 100.0%; height: 100.0%;">Unit: BMP (Barisal Metropolitan Police)<br>Total Cases: 12557</div>`)[0];
+                popup_7924f7047e3741a0935f46b57337898a.setContent(html_839285072eea1e8b34c52212ebc3a2fc);
+            
+        
+
+        marker_891b3da73d2d1d2a6d75e4b9eeb223f5.bindPopup(popup_7924f7047e3741a0935f46b57337898a)
+        ;
+
+        
+    
+    
+                marker_891b3da73d2d1d2a6d75e4b9eeb223f5.setIcon(icon_71481678c304e7fd61c8753718220dc8);
+            
+    
+            var marker_49b68ba6a2544580ce6cba665f36c934 = L.marker(
+                [24.8949, 91.8687],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_70f73676e4e263892da53458e12cec96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8f6ea3410571858fc110591961a7b83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a0221e901301219a4dd29a36191836b = $(`<div id="html_7a0221e901301219a4dd29a36191836b" style="width: 100.0%; height: 100.0%;">Unit: SMP (Sylhet Metropolitan Police)<br>Total Cases: 13496</div>`)[0];
+                popup_b8f6ea3410571858fc110591961a7b83.setContent(html_7a0221e901301219a4dd29a36191836b);
+            
+        
+
+        marker_49b68ba6a2544580ce6cba665f36c934.bindPopup(popup_b8f6ea3410571858fc110591961a7b83)
+        ;
+
+        
+    
+    
+                marker_49b68ba6a2544580ce6cba665f36c934.setIcon(icon_70f73676e4e263892da53458e12cec96);
+            
+    
+            var marker_7b01269593ad4187f3c60e683a285eb9 = L.marker(
+                [23.8103, 90.4125],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_0bbe5d6df76fdefed0d5653f077436d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8101eef01a50bcaf5c872a41b4958bb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20500b40c046a2c5e786664e2362e443 = $(`<div id="html_20500b40c046a2c5e786664e2362e443" style="width: 100.0%; height: 100.0%;">Unit: Dhaka Range<br>Total Cases: 364068</div>`)[0];
+                popup_8101eef01a50bcaf5c872a41b4958bb6.setContent(html_20500b40c046a2c5e786664e2362e443);
+            
+        
+
+        marker_7b01269593ad4187f3c60e683a285eb9.bindPopup(popup_8101eef01a50bcaf5c872a41b4958bb6)
+        ;
+
+        
+    
+    
+                marker_7b01269593ad4187f3c60e683a285eb9.setIcon(icon_0bbe5d6df76fdefed0d5653f077436d6);
+            
+    
+            var marker_51cc07689a27082e36c8a90a9dea323c = L.marker(
+                [24.7471, 90.4203],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_0a06e1504af36d3e43d8f4694950a921 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e39b79dc414e1adfa9bd1667e1ceba6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd23c9f3abf8047ac01acc6bef1b11a7 = $(`<div id="html_dd23c9f3abf8047ac01acc6bef1b11a7" style="width: 100.0%; height: 100.0%;">Unit: Mymensingh Range<br>Total Cases: 37830</div>`)[0];
+                popup_1e39b79dc414e1adfa9bd1667e1ceba6.setContent(html_dd23c9f3abf8047ac01acc6bef1b11a7);
+            
+        
+
+        marker_51cc07689a27082e36c8a90a9dea323c.bindPopup(popup_1e39b79dc414e1adfa9bd1667e1ceba6)
+        ;
+
+        
+    
+    
+                marker_51cc07689a27082e36c8a90a9dea323c.setIcon(icon_0a06e1504af36d3e43d8f4694950a921);
+            
+    
+            var marker_c48acc672de274a546a9c8a3d4dd0f48 = L.marker(
+                [22.3419, 91.8155],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_52a1eb3c0030ce8fbf97552742172eec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c301806dc1e10950bfb61a84fb9f566 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2cb1f29b165f2722ea2fa64054c6918 = $(`<div id="html_c2cb1f29b165f2722ea2fa64054c6918" style="width: 100.0%; height: 100.0%;">Unit: Chittagong Range<br>Total Cases: 255132</div>`)[0];
+                popup_9c301806dc1e10950bfb61a84fb9f566.setContent(html_c2cb1f29b165f2722ea2fa64054c6918);
+            
+        
+
+        marker_c48acc672de274a546a9c8a3d4dd0f48.bindPopup(popup_9c301806dc1e10950bfb61a84fb9f566)
+        ;
+
+        
+    
+    
+                marker_c48acc672de274a546a9c8a3d4dd0f48.setIcon(icon_52a1eb3c0030ce8fbf97552742172eec);
+            
+    
+            var marker_ff2de9354b2c03256f65c7f7349cd64a = L.marker(
+                [24.8999, 91.872],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_e6c978fe1278f05dd8d01c2d3cf53e3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b4af0391349fb855b408780796dc411 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5e6a75ff6c82b269b736ee3a7b4004a = $(`<div id="html_f5e6a75ff6c82b269b736ee3a7b4004a" style="width: 100.0%; height: 100.0%;">Unit: Sylhet Range<br>Total Cases: 83528</div>`)[0];
+                popup_3b4af0391349fb855b408780796dc411.setContent(html_f5e6a75ff6c82b269b736ee3a7b4004a);
+            
+        
+
+        marker_ff2de9354b2c03256f65c7f7349cd64a.bindPopup(popup_3b4af0391349fb855b408780796dc411)
+        ;
+
+        
+    
+    
+                marker_ff2de9354b2c03256f65c7f7349cd64a.setIcon(icon_e6c978fe1278f05dd8d01c2d3cf53e3f);
+            
+    
+            var marker_3297a2ecb59d2cc0cf2034fcb3e743af = L.marker(
+                [22.8456, 89.5403],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_8243f29e04954997df7859346b1e59cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58ef9e92856b40e689e43611edc9df5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b96a4bc25148ba46706b2b7cb69d596 = $(`<div id="html_2b96a4bc25148ba46706b2b7cb69d596" style="width: 100.0%; height: 100.0%;">Unit: Khulna Range<br>Total Cases: 181103</div>`)[0];
+                popup_58ef9e92856b40e689e43611edc9df5f.setContent(html_2b96a4bc25148ba46706b2b7cb69d596);
+            
+        
+
+        marker_3297a2ecb59d2cc0cf2034fcb3e743af.bindPopup(popup_58ef9e92856b40e689e43611edc9df5f)
+        ;
+
+        
+    
+    
+                marker_3297a2ecb59d2cc0cf2034fcb3e743af.setIcon(icon_8243f29e04954997df7859346b1e59cc);
+            
+    
+            var marker_31b931b26ca4b8c4a21e7b453274dc38 = L.marker(
+                [22.701, 90.3665],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_5367ac0331c647c50c652b66d66bc49d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8accc9d12c06ea6300341927d0c836d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7583d96f8b4599f9d2266947e48ae4e = $(`<div id="html_c7583d96f8b4599f9d2266947e48ae4e" style="width: 100.0%; height: 100.0%;">Unit: Barisal Range<br>Total Cases: 91744</div>`)[0];
+                popup_8accc9d12c06ea6300341927d0c836d5.setContent(html_c7583d96f8b4599f9d2266947e48ae4e);
+            
+        
+
+        marker_31b931b26ca4b8c4a21e7b453274dc38.bindPopup(popup_8accc9d12c06ea6300341927d0c836d5)
+        ;
+
+        
+    
+    
+                marker_31b931b26ca4b8c4a21e7b453274dc38.setIcon(icon_5367ac0331c647c50c652b66d66bc49d);
+            
+    
+            var marker_0405c862aa7d2205f2dffb5a7ae06beb = L.marker(
+                [24.374, 88.6011],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_1d039fcb56fd6d901f99eba9152ff72a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6d434424cfe342648795bfba6a93dfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96d3f6d2bff1ef18ad8d475a443a618f = $(`<div id="html_96d3f6d2bff1ef18ad8d475a443a618f" style="width: 100.0%; height: 100.0%;">Unit: Rajshahi Range<br>Total Cases: 226167</div>`)[0];
+                popup_f6d434424cfe342648795bfba6a93dfe.setContent(html_96d3f6d2bff1ef18ad8d475a443a618f);
+            
+        
+
+        marker_0405c862aa7d2205f2dffb5a7ae06beb.bindPopup(popup_f6d434424cfe342648795bfba6a93dfe)
+        ;
+
+        
+    
+    
+                marker_0405c862aa7d2205f2dffb5a7ae06beb.setIcon(icon_1d039fcb56fd6d901f99eba9152ff72a);
+            
+    
+            var marker_106b7ef0b1d8558cdf5cd8e71aa6b2f0 = L.marker(
+                [25.7439, 89.2752],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_f23c6fcf3e5b93bd170d08e7930a9bcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20d618de9879e0c80e07280fb45b8dc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac1deae4634f6ed88647c39b403b6e10 = $(`<div id="html_ac1deae4634f6ed88647c39b403b6e10" style="width: 100.0%; height: 100.0%;">Unit: Rangpur Range<br>Total Cases: 130149</div>`)[0];
+                popup_20d618de9879e0c80e07280fb45b8dc3.setContent(html_ac1deae4634f6ed88647c39b403b6e10);
+            
+        
+
+        marker_106b7ef0b1d8558cdf5cd8e71aa6b2f0.bindPopup(popup_20d618de9879e0c80e07280fb45b8dc3)
+        ;
+
+        
+    
+    
+                marker_106b7ef0b1d8558cdf5cd8e71aa6b2f0.setIcon(icon_f23c6fcf3e5b93bd170d08e7930a9bcf);
+            
+    
+            var marker_64e74d256fa3723878f970cf9eba6da7 = L.marker(
+                [23.7276, 90.4106],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_52a62e620c49d0b8bf627bb79585e4a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ab0255c8907c5210cf513b2c69dff29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_305cf8ed14d332327d7a01f24b6fa76b = $(`<div id="html_305cf8ed14d332327d7a01f24b6fa76b" style="width: 100.0%; height: 100.0%;">Unit: Railway Range<br>Total Cases: 7680</div>`)[0];
+                popup_1ab0255c8907c5210cf513b2c69dff29.setContent(html_305cf8ed14d332327d7a01f24b6fa76b);
+            
+        
+
+        marker_64e74d256fa3723878f970cf9eba6da7.bindPopup(popup_1ab0255c8907c5210cf513b2c69dff29)
+        ;
+
+        
+    
+    
+                marker_64e74d256fa3723878f970cf9eba6da7.setIcon(icon_52a62e620c49d0b8bf627bb79585e4a2);
+            
+    
+            var marker_d7fcd2b3a6133320fc3d1da012dec5a1 = L.marker(
+                [23.9999, 90.4203],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_df6a5be3c87cd8343883bdc718953862 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ef5b086213bbb47d46272962fd971ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61b9b441d825e44867d59df40bc9c86a = $(`<div id="html_61b9b441d825e44867d59df40bc9c86a" style="width: 100.0%; height: 100.0%;">Unit: GMP (Gazipur Metropolitan Police)<br>Total Cases: 1116</div>`)[0];
+                popup_9ef5b086213bbb47d46272962fd971ec.setContent(html_61b9b441d825e44867d59df40bc9c86a);
+            
+        
+
+        marker_d7fcd2b3a6133320fc3d1da012dec5a1.bindPopup(popup_9ef5b086213bbb47d46272962fd971ec)
+        ;
+
+        
+    
+    
+                marker_d7fcd2b3a6133320fc3d1da012dec5a1.setIcon(icon_df6a5be3c87cd8343883bdc718953862);
+            
+    
+            var marker_571e955ade149738c1e922e53bb7da7b = L.marker(
+                [25.7439, 89.2752],
+                {
+}
+            ).addTo(marker_cluster_cfecaf730c88559c80488c3d2ae37b6a);
+        
+    
+            var icon_2c70370023fe074830f7f6c442ef10d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b3698569613b2f5735592f3efe33ed8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c83c97c3a0afaa2ef3b06ef1046d6ef6 = $(`<div id="html_c83c97c3a0afaa2ef3b06ef1046d6ef6" style="width: 100.0%; height: 100.0%;">Unit: RPMP (Rangpur Metropolitan Police)<br>Total Cases: 476</div>`)[0];
+                popup_2b3698569613b2f5735592f3efe33ed8.setContent(html_c83c97c3a0afaa2ef3b06ef1046d6ef6);
+            
+        
+
+        marker_571e955ade149738c1e922e53bb7da7b.bindPopup(popup_2b3698569613b2f5735592f3efe33ed8)
+        ;
+
+        
+    
+    
+                marker_571e955ade149738c1e922e53bb7da7b.setIcon(icon_2c70370023fe074830f7f6c442ef10d5);
+            
+    
+            marker_cluster_cfecaf730c88559c80488c3d2ae37b6a.addTo(map_e2b156f780cd05ec952c3cef5204a7f5);
+        
+</script>
+</html>
