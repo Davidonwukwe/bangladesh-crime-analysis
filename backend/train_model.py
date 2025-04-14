@@ -4,7 +4,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
-from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import cross_val_score
 from sklearn.preprocessing import StandardScaler
@@ -46,38 +45,33 @@ models = {
     "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
 }
 
-# Evaluate each model and save the best one
-best_model = None
-best_accuracy = 0
-best_model_name = ""
-
+# Evaluate each model
 for name, model in models.items():
     print(f"\n====== {name} ======")
 
-    # Cross-validation on the training set only (to avoid test data leakage)
+    # Cross-validation on the training set only
     cv_scores = cross_val_score(model, X_train, y_train, cv=5)
     print("Cross-validation Scores:", cv_scores)
     print("Mean CV Accuracy:", cv_scores.mean())
 
-    # Train only on the training set
+    # Train the model
     model.fit(X_train, y_train)
 
     # Predict and evaluate on the test set
     y_pred = model.predict(X_test)
 
-    # Evaluate model performance on the test data
     test_accuracy = accuracy_score(y_test, y_pred)
     print("\nTest Accuracy:", test_accuracy)
     print("Classification Report:\n", classification_report(y_test, y_pred))
 
-    # If this model has the best accuracy so far, save it
-    if test_accuracy > best_accuracy:
-        best_accuracy = test_accuracy
-        best_model = model
-        best_model_name = name
+# Explicitly select Random Forest as the best model
+best_model_name = "Random Forest"
+best_model = models[best_model_name]
+
+# Retrain Random Forest (to be sure it's properly fitted)
+best_model.fit(X_train, y_train)
 
 # Save the best model
-if best_model:
-    joblib.dump(best_model, 'best_model.pkl')
-    print(f"\nBest model is {best_model_name} with accuracy {best_accuracy}")
-    print("\nBest model saved as 'best_model.pkl'")
+joblib.dump(best_model, 'best_model.pkl')
+print(f"\nSelected model is {best_model_name}")
+print("Model saved as 'best_model.pkl'")
