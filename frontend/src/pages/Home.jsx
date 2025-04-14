@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="py-5 bg-light text-center">
+    <section className="py-5 text-center">
       <Container className="mt-5">
         <h1 className="display-4 fw-bold text-dark">
           Analyzing Crime Trends in <span className="text-primary">Bangladesh</span>

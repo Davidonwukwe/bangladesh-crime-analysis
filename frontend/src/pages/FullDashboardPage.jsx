@@ -8,7 +8,7 @@ function FullDashboardPage() {
         const viz = document.createElement('tableau-viz');
         viz.setAttribute('src', tableauUrl);
         viz.setAttribute('width', '100%');
-        viz.setAttribute('height', '800');
+        viz.setAttribute('height', '1500');
         viz.setAttribute('hide-tabs', 'false');
         viz.setAttribute('toolbar', 'top');
         vizRef.current.appendChild(viz);
@@ -22,15 +22,15 @@ function FullDashboardPage() {
 
     return (
         <div>
-            <h2>Full Crime Dashboard</h2>
+            <h2 className="mb-4">Full Crime Dashboard</h2>
             <div className="card">
                 <div className="card-body">
                     <div ref={vizRef}></div>
                 </div>
             </div>
+            <h2 className="mb-4">Crime Units Map</h2>
             <div className="card">
                 <div className="card-body">
-                    <h5 className="card-title">Crime Units Map</h5>
                     <iframe
                         src="/crime_units_map.html"
                         width="100%"
@@ -38,7 +38,7 @@ function FullDashboardPage() {
                         title="Crime Units Map"
                         frameBorder="0"
                         allowFullScreen
-                        style={{ display: 'block' }}
+                        style={{display: 'block'}}
                     ></iframe>
                 </div>
             </div>
