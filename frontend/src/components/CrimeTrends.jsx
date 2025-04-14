@@ -1,10 +1,7 @@
 import React from 'react';
 
 function CrimeTrends({ startYear, endYear, unitNames }) {
-    const unitsQuery = unitNames.length > 0 ? `&unit_name=${unitNames.join(',')}` : '';
-    // const tableauUrl = `https://public.tableau.com/views/CrimeTrends/Dashboard?:showVizHome=no&start_year=${startYear}&end_year=${endYear}${unitsQuery}`;
-    // const tableauUrl = `https://public.tableau.com/app/profile/mujammal.ahmed/viz/CrimeTrends/Dashboard1?:showVizHome=no&start_year=${startYear}&end_year=${endYear}${unitsQuery}`;
-    // const tableauUrl = `https://public.tableau.com/app/profile/mujammal.ahmed/viz/DataAnalysis_17431598803850/Dashboard1?:showVizHome=no&start_year=${startYear}&end_year=${endYear}${unitsQuery}`;
+
     const tableauUrl = `https://public.tableau.com/views/DataAnalysis_17431598803850/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link`;
 
     return (
